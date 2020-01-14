@@ -1,0 +1,17 @@
+<launch>
+    <!-- 主owlファイルにimportされているowlファイルの情報 -->
+    <!-- 総数3個 -->
+    <param name="/ontoros/imported_owl_num" type="int" value="3"/>
+    <!-- TTIMapOnto.owl -->
+    <param name="/ontoros/imported_owl_uri/1" type="str" value="http://www.brain.kyutech.ac.jp/brainis/Ontology/KyutechTTICore-0.031/KyutechTTIMapOnto"/>
+    <param name="/ontoros/imported_owl_path/1" type="str" value="/home/nedo_prius/user/YutaroIshida14/owl/nedo_owl_i2/KyutechTTIMapOnto.owl"/>
+    <!-- TTIControlOnto.owl -->
+    <param name="/ontoros/imported_owl_uri/2" type="str" value="http://www.brain.kyutech.ac.jp/brainis/Ontology/KyutechTTICore-0.03/KyutechTTIControlOnto"/>
+    <param name="/ontoros/imported_owl_path/2" type="str" value="/home/nedo_prius/user/YutaroIshida14/owl/nedo_owl_i2/KyutechTTIControlOnto.owl"/>
+    <!-- TTICarOnto.owl -->
+    <param name="/ontoros/imported_owl_uri/3" type="str" value="http://www.brain.kyutech.ac.jp/brainis/Ontology/KyutechTTICore-0.03/KyutechTTICarOnto"/>
+    <param name="/ontoros/imported_owl_path/3" type="str" value="/home/nedo_prius/user/YutaroIshida14/owl/nedo_owl_i2/KyutechTTICarOnto.owl"/>
+
+    <!-- 主owlファイル -->
+    <param name="/ontoros/owl_path" type="str" value="/home/nedo_prius/user/YutaroIshida14/owl/nedo_owl_i2/nedo_hibikino_i4w3.owl"/>
+</launch>
