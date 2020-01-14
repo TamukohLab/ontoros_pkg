@@ -1,0 +1,473 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.brain.kyutech.ac.jp/brainis/Control#"
+     xml:base="http://www.brain.kyutech.ac.jp/brainis/Control"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:control="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Control#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control">
+        <owl:versionIRI rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Ontology/KyutechTTICore-0.03/KyutechTTIControlOnto"/>
+        <owl:versionInfo>Kyutech-TTI Core: Car Ontology (v0.031)</owl:versionInfo>
+        <dcterms:license>Copyright (C) 2015 Computational Intelligence Laboratory,
+Toyota Technological Institute, Nagoya, Japan.
+
+On Modified Part: Copyright (C) 2016 Graduate School of Life Science and Systems Engineering,
+Kyushu Institute of Technology, Kitakyushu, Japan &amp;amp; Principles of Informatics Research Division, National Institute of Informatics, Tokyo, Japan
+
+This work is licensed under Creative Commons - Attribution-NonCommercial-ShareAlike
+4.0 International (http://creativecommons.org/licenses/by-nc-sa/4.0/).</dcterms:license>
+        <dcterms:modifier>Dr. Hiroaki Wagatsuma, Associate Professor (Kyutech)
+Dr. Ryutaro Ichise, Associate Professor (NII)</dcterms:modifier>
+        <rdfs:label>Control Ontology</rdfs:label>
+        <dcterms:creator>Dr. Lihua Zhao, Postdoctoral researcher (TTI)
+Dr. Yutaka Sasaki, Director &amp; Professor (TTI) </dcterms:creator>
+        <dcterms:publisher>Automatic Driving and Safety Driving Support Research Center (ASReC), Kitakyushu Science and Research Park (KSRP)</dcterms:publisher>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/modifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modifier"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#approachTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#approachTo"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#collisionWarningWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#collisionWarningWith"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#endLane -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#endLane"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#enterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#enterOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#isNodeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#exitOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#exitOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#isNodeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#giveWay -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#giveWay"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#hasNode -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#hasNode"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#hasPathSegment -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#hasPathSegment">
+        <owl:inverseOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#isPathSegmentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#isNodeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#isNodeOf"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#isPathSegmentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#isPathSegmentOf"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#nextNode -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#nextNode">
+        <owl:inverseOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#prevNode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#nextPathSegment -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#nextPathSegment">
+        <owl:inverseOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#prevPathSegment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#prevNode -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#prevNode"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#prevPathSegment -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#prevPathSegment"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#startLane -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#startLane"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#nodePos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#nodePos"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#pathSegmentID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#pathSegmentID"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#BackwardCollisionWarning -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#BackwardCollisionWarning">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#CollisionWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#CollisionWarning -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#CollisionWarning">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#Warning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#CurrentLaneSafeDist -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#CurrentLaneSafeDist">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#RoadCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#DrivingAction -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#DrivingAction"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#EndLane -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#EndLane">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#LaneSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#EndNode -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#EndNode">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#ForwardCollisionWarning -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#ForwardCollisionWarning">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#CollisionWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#Go -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#Go">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#DrivingAction"/>
+        <rdfs:comment>1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#GoBackward -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#GoBackward">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#DrivingAction"/>
+        <rdfs:comment>5</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#GoForward -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#GoForward">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#DrivingAction"/>
+        <rdfs:comment>4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#GreenGo -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#GreenGo">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#TrafficSignalControl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#IntersectionSegment -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#IntersectionSegment">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#PathSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#LaneChange -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#LaneChange"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#LaneDepartureWarning -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#LaneDepartureWarning">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#Warning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#LaneSegment -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#LaneSegment">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#PathSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#LeftLaneChange -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#LeftLaneChange">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#LaneChange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#Node -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#Node">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#Path"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#OverSpeedWarning -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#OverSpeedWarning">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#Warning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#Path -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#Path"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#PathSegment -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#PathSegment">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#Path"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#RedStop -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#RedStop">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#TrafficSignalControl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#RightLaneChange -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#RightLaneChange">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#LaneChange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#RoadCondition -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#RoadCondition"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#SideCollisionWarning -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#SideCollisionWarning">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#CollisionWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#StartLane -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#StartLane">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#LaneSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#StartNode -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#StartNode">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#Stop -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#Stop">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#DrivingAction"/>
+        <rdfs:comment>0</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#ToLeft -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#ToLeft">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#DrivingAction"/>
+        <rdfs:comment>2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#ToRight -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#ToRight">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#DrivingAction"/>
+        <rdfs:comment>3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#TrafficSignalControl -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#TrafficSignalControl"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#TurnLeft -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#TurnLeft">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#DrivingAction"/>
+        <rdfs:comment>6</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#TurnRight -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#TurnRight">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#DrivingAction"/>
+        <rdfs:comment>7</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#WaitThenGo -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#WaitThenGo">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#DrivingAction"/>
+        <rdfs:comment>8</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#Warning -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#Warning"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Control#Yellow -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Control#Yellow">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Control#TrafficSignalControl"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

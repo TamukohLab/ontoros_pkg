@@ -1,0 +1,1161 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.brain.kyutech.ac.jp/brainis/Map#"
+     xml:base="http://www.brain.kyutech.ac.jp/brainis/Map"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:map="http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map">
+        <owl:versionIRI rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Ontology/KyutechTTICore-0.031/KyutechTTIMapOnto"/>
+        <owl:versionInfo>Kyutech-TTI Core: Car Ontology (v0.031)</owl:versionInfo>
+        <dcterms:license>Copyright (C) 2015 Computational Intelligence Laboratory,
+Toyota Technological Institute, Nagoya, Japan.
+
+On Modified Part: Copyright (C) 2016 Graduate School of Life Science and Systems Engineering,
+Kyushu Institute of Technology, Kitakyushu, Japan &amp;amp; Principles of Informatics Research Division, National Institute of Informatics, Tokyo, Japan
+
+This work is licensed under Creative Commons - Attribution-NonCommercial-ShareAlike
+4.0 International (http://creativecommons.org/licenses/by-nc-sa/4.0/).</dcterms:license>
+        <dcterms:modifier>Dr. Hiroaki Wagatsuma, Associate Professor (Kyutech)
+Dr. Ryutaro Ichise, Associate Professor (NII)</dcterms:modifier>
+        <dcterms:creator>Dr. Lihua Zhao, Postdoctoral researcher
+Prof. Yutaka Sasaki, Director &amp; Professor </dcterms:creator>
+        <rdfs:label>Map Ontology</rdfs:label>
+        <dcterms:publisher>Automatic Driving and Safety Driving Support Research Center (ASReC), Kitakyushu Science and Research Park (KSRP)</dcterms:publisher>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/modifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modifier"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#byte -->
+
+    <rdfs:Datatype rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#byte"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#deg -->
+
+    <rdfs:Datatype rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#deg"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#kHz -->
+
+    <rdfs:Datatype rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#kHz">
+        <rdfs:label>kilohertz</rdfs:label>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#kmh -->
+
+    <rdfs:Datatype rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#kmh">
+        <rdfs:comment>kilometer per hour</rdfs:comment>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#mm -->
+
+    <rdfs:Datatype rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#mm">
+        <rdfs:label>millimeter</rdfs:label>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#mm_pixel -->
+
+    <rdfs:Datatype rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#mm_pixel"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#ms -->
+
+    <rdfs:Datatype rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#ms">
+        <rdfs:label>millisecond</rdfs:label>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#pixel -->
+
+    <rdfs:Datatype rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#pixel"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#pixl -->
+
+    <rdfs:Datatype rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#pixl"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#rad -->
+
+    <rdfs:Datatype rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#rad"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#sec -->
+
+    <rdfs:Datatype rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#sec">
+        <rdfs:label>second</rdfs:label>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#goStraightTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#goStraightTo"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#hasCar -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#hasCar">
+        <rdfs:domain rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RouteOfTransportation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#hasIntersection -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#hasIntersection">
+        <rdfs:subPropertyOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#hasJunction"/>
+        <rdfs:domain rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RoadType"/>
+        <rdfs:range rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Intersection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#hasJunction -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#hasJunction"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#hasLane -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#hasLane">
+        <owl:inverseOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#isLaneOf"/>
+        <rdfs:domain rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RoadSegment"/>
+        <rdfs:range rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Lane"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#hasRoadSegment -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#hasRoadSegment">
+        <owl:inverseOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#isRoadSegmentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#isConnectedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#isConnectedTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#isLaneOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#isLaneOf">
+        <rdfs:domain rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Lane"/>
+        <rdfs:range rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RoadSegment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#isLeftOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#isLeftOf">
+        <owl:inverseOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#isRightOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#isNextTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#isNextTo">
+        <rdfs:domain rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Lane"/>
+        <rdfs:range rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Lane"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#isOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#isOn"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#isRightOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#isRightOf"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#isRoadSegmentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#isRoadSegmentOf"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#nearTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#nearTo"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#relatedTrafficLight -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#relatedTrafficLight"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#turnLeftTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#turnLeftTo"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#turnRightTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#turnRightTo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#address"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#adminArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#adminArea"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#allowLaneChange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#allowLaneChange">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#allowedDir -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#allowedDir">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Lane"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#alt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#alt"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#angle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#angle">
+        <rdfs:domain rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#TrafficSignal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#boundCoordinate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#boundCoordinate"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#boundPos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#boundPos">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#brand -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#brand"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#curve_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#curve_id"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#drivingDir -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#drivingDir">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Lane"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#enterPos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#enterPos">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Lane"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#exitPos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#exitPos">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Lane"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#isEmpty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#isEmpty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RoadPart"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#lat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#lat"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#loc_x -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#loc_x">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#loc_y -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#loc_y">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#loc_z -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#loc_z">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#lon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#lon"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#name"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#opening_hours -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#opening_hours"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#operator -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#operator"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#orientation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#orientation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#osm_node_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#osm_node_id"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#osm_ref -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#osm_ref"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#osm_way_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#osm_way_id"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#phone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#phone"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#postcode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#postcode"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#pubFacAdmin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#pubFacAdmin"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#river_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#river_id">
+        <rdfs:domain rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#River"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#speedMax -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#speedMax">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#website -->
+
+    <owl:DatatypeProperty rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#website"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Airport -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Airport">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Amenity -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Amenity">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#AuxiliaryRoadSign -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#AuxiliaryRoadSign">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RoadSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Bank -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Bank">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Building -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Building">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#BusLane -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#BusLane">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Lane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#BusStation -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#BusStation">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Station"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#BusStop -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#BusStop">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#BusStation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#College -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#College">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#EducationalInstitute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Convenience -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Convenience">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Shop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#CrosswalkRoadSegment -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#CrosswalkRoadSegment">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RoadSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#DirectionalRoadSign -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#DirectionalRoadSign">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RoadSign"/>
+        <rdfs:comment>Directional road sign</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#EducationalInstitute -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#EducationalInstitute">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#FastFood -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#FastFood">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Restaurant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#FireStation -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#FireStation">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Forest -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Forest">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#NaturalPlace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#GasStation -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#GasStation">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Highway -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Highway">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RoadType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Hospital -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Hospital">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Infrastructure -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Infrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#InstructionRoadSign -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#InstructionRoadSign">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RoadSign"/>
+        <rdfs:comment xml:lang="en">Instruction road sign</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#InstructionSurfaceSign -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#InstructionSurfaceSign">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RoadSurfaceMarking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Intersection -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Intersection">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Junction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Junction -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Junction">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RoadPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Kindergarten -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Kindergarten">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#EducationalInstitute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Lake -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Lake">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#NaturalPlace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Lane -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Lane">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RoadPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#LaneAdapter -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#LaneAdapter">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Junction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Leisure -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Leisure">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Amenity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#LocalRoad -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#LocalRoad">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#OrdinaryRoad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#MetroStation -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#MetroStation">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Station"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#MunicipalRoad -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#MunicipalRoad">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#OrdinaryRoad"/>
+        <rdfs:comment>MunicipalRoad</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#NationalRoad -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#NationalRoad">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#OrdinaryRoad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#NaturalPlace -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#NaturalPlace">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Object -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Object"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#OneWayLane -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#OneWayLane">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Lane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#OrdinaryRoad -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#OrdinaryRoad">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RoadType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#OtherSigns -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#OtherSigns">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RoadSurfaceMarking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Park -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Park">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Leisure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#ParkingPlace -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#ParkingPlace">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Amenity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Pharmacy -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Pharmacy">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Shop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Place -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Place"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#PoliceStation -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#PoliceStation">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#PostOffice -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#PostOffice">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#PrefecturalRoad -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#PrefecturalRoad">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#OrdinaryRoad"/>
+        <rdfs:comment>PrefecturalRoad</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#PrivateRoad -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#PrivateRoad">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#OrdinaryRoad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#RailwayStation -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#RailwayStation">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Station"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#RegulatoryRoadSign -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#RegulatoryRoadSign">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RoadSign"/>
+        <rdfs:comment xml:lang="en">Regulatory sign</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#RegulatorySurfaceSign -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#RegulatorySurfaceSign">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RoadSurfaceMarking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Restaurant -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Restaurant">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Amenity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#River -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#River">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#NaturalPlace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#RoadPart -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#RoadPart">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RouteOfTransportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#RoadSegment -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#RoadSegment">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RoadPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#RoadSign -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#RoadSign">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#TrafficSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#RoadSurfaceMarking -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#RoadSurfaceMarking">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#TrafficSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#RoadType -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#RoadType">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RouteOfTransportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Roundabout -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Roundabout">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Junction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#RouteOfTransportation -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#RouteOfTransportation"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#School -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#School">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#EducationalInstitute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Shop -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Shop">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Amenity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RouteOfTransportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit100 -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit100">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit25 -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit25">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit30 -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit30">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit40 -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit40">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit50 -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit50">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit60 -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit60">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit70 -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit70">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit80 -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit80">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#SportsCentre -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#SportsCentre">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Leisure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Station -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Station">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Supermarket -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Supermarket">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Shop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#TollGate -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#TollGate">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#TrafficSign -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#TrafficSign"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#TrafficSignal -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#TrafficSignal"/>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#Turn -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#Turn">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Junction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#TwoWayLane -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#TwoWayLane">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Lane"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#University -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#University">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#EducationalInstitute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#UtilityPole -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#UtilityPole">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.brain.kyutech.ac.jp/brainis/Map#WarningRoadSign -->
+
+    <owl:Class rdf:about="http://www.brain.kyutech.ac.jp/brainis/Map#WarningRoadSign">
+        <rdfs:subClassOf rdf:resource="http://www.brain.kyutech.ac.jp/brainis/Map#RoadSign"/>
+        <rdfs:comment xml:lang="en">Warning sign</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
