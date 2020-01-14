@@ -1,4 +1,4 @@
 # ontoros_pkg
 ## Dependencies
-- ontoros_msgs
+- ontology_msgs
 - rosjava
